@@ -1,72 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5 Form</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
-<body>
-<div class="card" style="width: 80rem;">
-    <div class="card-header">
-        Payment for example
-    </div>
-    <div class="container"></div>
-    <form class="row g-3">
-        <div class="col-md-6">
-            <label for="inputCity" class="form-label">Card number</label>
-            <input type="text" class="form-control" id="inputCity">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/bf023232da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="card" style="width: 80%; height: auto">
+      <div class="card-header">Payment for example</div>
+      <div class="container"></div>
+      <form class="container-fluid">
+        <div class="d-flex justify-content-between">
+          <div class="col-5">
+            <label for="inputCardNumber" class="form-label"
+              >Card number #</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+              placeholder="XXXXXXXXXXXXXXXX"
+            />
           </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">CVC</label>
+          <div class="col-3">
+            <label for="inputCVC" class="form-label">CVC #</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCity"
+              placeholder="XXX"
+            />
+          </div>
+          <div class="col-1" id="dollar-sign">
+            <i class="fa-solid fa-dollar-sign"></i>
+          </div>
+          <div class="col-3">
+            <label for="inputAmount" class="form-label">Amount</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAmount"
+              placeholder="Amount"
+            />
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="col-5">
+            <label for="inputFname" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLname"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="col-5">
+            <label for="inputLname" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLname"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="col-5">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="col-4">
+            <label for="inputState" class="form-label">State</label>
             <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
+              <option selected>Pick a state</option>
               <option>...</option>
             </select>
           </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Ammount</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
+          <div class="col-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
           </div>
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+        <div class="container">
+          <label for="floatingTextarea2">Comments</label>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Add any notes here"
+              id="floatingTextarea2"
+              style="height: 100px; width: 400px"
+            ></textarea>
+          </div>
         </div>
-    </form>
+      </form>
+      <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+        <button class="btn btn-primary" type="button">Send</button>
+      </div>
     </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
