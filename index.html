@@ -82,8 +82,8 @@
           </div>
           <div class="col-4">
             <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Pick a state</option>
+            <select id="inputState" class="form-select" required>
+              <option selected disabled value="">Pick a state</option>
               <option>...</option>
             </select>
           </div>
@@ -111,7 +111,7 @@
                   <i class="fa-brands fa-cc-apple-pay"></i>
                 </div>
               </div>
-                <div>
+                <div class="p-2">
                 <label for="floatingTextarea2">Comments</label>
                 <div class="form-floating">
                   <textarea
@@ -126,7 +126,7 @@
       </form>
       <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
         <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
-        <button class="btn btn-primary" type="button">Send</button>
+        <button class="btn btn-primary" type="submit">Send</button>
       </div>
     </div>
     <script
